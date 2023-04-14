@@ -16,7 +16,7 @@ Outstanding results on the benchmark for text detection are achieved by DPText-D
 
 ## Usage
 
-It's recommended to configure the environment using Anaconda. Python 3.8 + PyTorch 1.9.1 (or 1.9.0) + CUDA 11.1 + Detectron2 (v0.6) are suggested.
+It is recommended to configure the environment using Anaconda. Python 3.8 + PyTorch 1.9.1 (or 1.9.0) + CUDA 11.1 + Detectron2 (v0.6) are suggested.
 
 - ### Installation
 ```
