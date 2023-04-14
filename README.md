@@ -31,7 +31,7 @@ pip install addict
 - ### Training
 
 **Fine-tune:**
-Yolov6-N network is being used in the fine-tuning model to replace the DPText-DETR encoder. When compared to the original DPText-DETR, the inference speed is tested to be 2–3 times faster, but the precision and recall are less accurate. On the Colab GPU, the model is fine-tuned with a batch size of 4. When the batch size is increased and the pretrained dataset is a synthetic text dataset (which it is not currently), more performance is expected. Training example:
+Yolov6-N network is being used in the fine-tuning model to replace the DPText-DETR encoder. When compared to the original DPText-DETR, the inference speed is tested to be 2–3 times faster, but the precision and recall are less accurate. The model is optimized with a batch size of four using the Colab GPU. More performance is expected when the batch size is increased and the model is trained on a synthetic text dataset.
 
 ```
 python tools/train_net.py --config-file configs/DPText_DETR/TotalText/R_50_poly.yaml --num-gpus 1
