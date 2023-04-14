@@ -5,16 +5,16 @@ DATASETS:
   TEST: ("totaltext_poly_test",)  # or "inversetext_test", "totaltext_poly_test_rotate"
 
 MODEL:
-  WEIGHTS: "model_final.pth"  # or the provided pre-trained model
+  WEIGHTS: "model_best.pth"  # or the provided pre-trained model
 
 SOLVER:
-  IMS_PER_BATCH: 3
-  BASE_LR: 5e-5
-  LR_BACKBONE: 5e-5
+  IMS_PER_BATCH: 4
+  BASE_LR: 1e-4
+  LR_BACKBONE: 1e-5
   WARMUP_ITERS: 0
-  STEPS: (7000,)
-  MAX_ITER: 10000
-  CHECKPOINT_PERIOD: 6000
+  STEPS: (16000,)
+  MAX_ITER: 20000
+  CHECKPOINT_PERIOD: 5000
 
 TEST:
   EVAL_PERIOD: 2000
