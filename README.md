@@ -10,6 +10,10 @@ Outstanding results on the benchmark for text detection are achieved by DPText-D
 |:------:|:------:|:------:|:------:|:------:|:------:|
 |Total-Text|Yolov6-N|90.4|77.9|83.6|[GoogleDrive](https://drive.google.com/file/d/1GN2p1asuJhd5cdRBB2bl3iLzynQJUMr5/view?usp=sharing)|
 
+|Benchmark|Backbone|Precision|Recall|F-measure|Pre-trained Model|Fine-tuned Model|
+|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Total-Text|Res50|91.8|86.4|89.0|[OneDrive](https://1drv.ms/u/s!AimBgYV7JjTlgccGbLGc9wYB-CGfpg?e=kpyje7)/[Baidu](https://pan.baidu.com/s/1MatDxMtAc2HhI56otNQ3pA)(osxo)|[OneDrive](https://1drv.ms/u/s!AimBgYV7JjTlgccKyruwWCE09pdxnA?e=sMx7fq)/[Baidu](https://pan.baidu.com/s/1Vs69ZGp9HeJzGqptupx3uw)(p268)|
+
 - ### Training
 
 **Fine-tune:**
