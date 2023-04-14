@@ -5,6 +5,7 @@
 Outstanding results on the benchmark for text detection are achieved by DPText-DETR. However, it is unable to perform real-time inference. In order to accomplish real-time inference, I integrated [YOLOv6](https://github.com/meituan/YOLOv6), a quick and high-performance object detection network, with [DPText-DETR](https://github.com/ymy-k/DPText-DETR). Additionally, ROIAlign is employed to improve the decoder's query embedding, and a lightweight segmentation head is created to support multitask learning for even more accuracy increase.
 
 ## Experimental Results
+
 |Benchmark|Backbone|Precision|Recall|F-measure|Fine-tuned Model|
 |:------:|:------:|:------:|:------:|:------:|:------:|:------:|
 |Total-Text|yolo6n|90.4|77.9|83.6|[GoogleDrive](https://drive.google.com/file/d/1GN2p1asuJhd5cdRBB2bl3iLzynQJUMr5/view?usp=sharing)
