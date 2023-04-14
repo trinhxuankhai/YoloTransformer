@@ -4,6 +4,10 @@
 
 Outstanding results on the benchmark for text detection are achieved by DPText-DETR. However, it is unable to perform real-time inference. In order to accomplish real-time text detection, I integrated [YOLOv6](https://github.com/meituan/YOLOv6), a quick and high-performance object detection network, with [DPText-DETR](https://github.com/ymy-k/DPText-DETR). Additionally, ROIAlign is employed to improve the decoder's query embedding, and a lightweight segmentation head is created to support multitask learning for even more accuracy increase.
 
+## Proposed Architecture
+
+<img src="./figs/yolo_transformer.png" alt="image" style="zoom:50%;" />
+
 ## Experimental Results
 
 |Benchmark|Backbone|Precision|Recall|F-measure|Fine-tuned Model|
@@ -31,7 +35,7 @@ pip install addict
 - ### Training
 
 **Fine-tune:**
-Yolov6-N network is being used in the fine-tuning model to replace the DPText-DETR encoder. When compared to the original DPText-DETR, the inference speed is tested to be 2–3 times faster, but the precision and recall are less accurate. The model is optimized with a batch size of four using the Colab GPU. More performance is expected when the batch size is increased and the model is trained on a synthetic text dataset.
+Yolov6-N network is being used in the fine-tuning model to replace the DPText-DETR encoder. When compared to the original DPText-DETR, the inference speed is tested to be 2–3 times faster, but the precision and recall are less accurate. The model is optimized with a batch size of four using one GPU on Colab. More performance is expected when the batch size is increased and the model is trained on a synthetic text dataset. Trainning example:
 
 ```
 python tools/train_net.py --config-file configs/DPText_DETR/TotalText/R_50_poly.yaml --num-gpus 1
