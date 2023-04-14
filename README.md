@@ -7,13 +7,13 @@ Outstanding results on the benchmark for text detection are achieved by DPText-D
 ## Experimental Results
 
 |Benchmark|Backbone|Precision|Recall|F-measure|Fine-tuned Model|
-|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
-|Total-Text|yolo6n|90.4|77.9|83.6|[GoogleDrive](https://drive.google.com/file/d/1GN2p1asuJhd5cdRBB2bl3iLzynQJUMr5/view?usp=sharing)
+|:------:|:------:|:------:|:------:|:------:|:------:|
+|Total-Text|Yolov6-N|90.4|77.9|83.6|[GoogleDrive](https://drive.google.com/file/d/1GN2p1asuJhd5cdRBB2bl3iLzynQJUMr5/view?usp=sharing)|
 
 - ### Training
 
 **Fine-tune:**
-Yolo6n network is being used in the fine-tuning model to replace the DPText-DETR encoder. When compared to the original DPText-DETR, the inference speed is tested to be 2–3 times faster, but the precision and recall are less accurate. On the Colab GPU, the model is fine-tuned with a batch size of 4. When the batch size is increased and the pretrained dataset is a synthetic text dataset (which it is not currently), more performance is expected. 
+Yolov6-N network is being used in the fine-tuning model to replace the DPText-DETR encoder. When compared to the original DPText-DETR, the inference speed is tested to be 2–3 times faster, but the precision and recall are less accurate. On the Colab GPU, the model is fine-tuned with a batch size of 4. When the batch size is increased and the pretrained dataset is a synthetic text dataset (which it is not currently), more performance is expected. 
 
 More detail on trainning and dataset preparation can be refered to [DPText-DETR](https://github.com/ymy-k/DPText-DETR).
 
